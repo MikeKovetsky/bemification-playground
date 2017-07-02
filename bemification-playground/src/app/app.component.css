@@ -1,0 +1,27 @@
+.container {
+  background: #474840;
+  padding: 0 24px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.ace {
+  width: 50%;
+  height: 500px;
+}
+
+.title {
+  color: white;
+  font-size: 40px;
+  padding: 20px 0;
+}
+
+.description {
+  color: white;
+  padding: 20px 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}

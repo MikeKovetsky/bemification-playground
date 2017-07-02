@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  @ViewChild('sourceCodeEditor') sourceCodeEditor;
+  @ViewChild('resultCodeEditor') resultCodeEditor;
+
+  sourceCode: string = '';
+  resultCode: string = '';
+
+  public translate(code) {
+    this.resultCode = code;
+  }
 }
